@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Arjit Yadav" />
+    <meta name="description" content="Personal blog and resume">
+    
+    
+    
+      <title>Arjit 21.01 - Projects</title>
+    
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+
+    
+
+	<!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/syntax.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <section id="projects">
+<div class="container">
+  <h3>Projects</h3>
+  <div class="panel panel-default">
+    <div class="panel-body">
+		<h5>
+
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="https://github.com/arjit3004/Detect_COVID-19_in_X-Rays_images">CoVac : COVID-19 Diagnosis</a></strong><br>
+      The outbreak of COVID-19 has caused more than 9.5 million cases in India so far, with that number continuing to grow. To control the spread of the disease, screening large numbers of suspected cases for appropriate quarantine and treatment measures is a priority. The availability and quality of laboratory testing in the infected region presents a challenge, so alternative diagnostic methods are urgently needed to combat the disease. Different COVID-19 tests are costly & time taking.
+
+      <br>
+      <br>
+      <ul>
+        <li>Based on COVID-19 radio-graphical changes in X-rays images, I hypothesized that deep learning methods might be able to extract COVID-19’s specific graphical features and provide a clinical diagnosis ahead of the pathogenic test, thus saving critical time for disease control.
+        </li>
+        <li>Models used in this project are VGG-16, ResNet-50, Inception-V3 and Xception. Out of that, best performing model will be used in Grad-CAM for visualization.
+        </li>
+        </ul>
+        
+        <p><strong>Dataset</strong></p>
+        <ul>
+          <li>For the training and development of Deep learning based classification models, COVID-19, and normal chest X-ray images were downloaded from ieee github repository and Kaggle.</li>
+          <p style="text-align: center;"> <strong> 2000 X-Ray Images </strong>  |  <strong style="color: red;"> 827 COVID +ve </strong>  |  <strong style="color: green;"> 1173 COVID -ve</strong></p>
+        <li>Class Imbalance: Total number of a class of data (covid positive) is far less than the total number of another class of data (covid -ve).
+          <p>Solved by using Weighted Cross Entropy Loss.</p>
+          
+          </li>
+        </ul>
+        <p><strong>Workflow</strong></p>
+        <div align="center">
+          <img src="img/covid1.png" alt="workflow">
+        </div>
+
+        <p><strong>Model Evaluation</strong></p>
+        <div align="center">
+          <img src="img/covid3.png" alt="features">
+        </div>
+
+       
+		</h5>
+    <br>
+
+		<h5>
+			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a  href="">WeAlert: Drowsiness Detection</a></strong>
+      <br>
+      Today drowsy driving is a serious problem that leads to thousands of accidents each year. Motor vehicle collisions lead to significant death and disability as well as significant financial cost to both security and individual due to the driver impairments. Drowsiness is one of the factors for collisions.
+       <br>
+       According to the National Highway Traffic Safety Administration, every year about 100,000 police-reported crashes involve drowsy driving. These crashes result in more than 1,550 fatalities and 71,000 injuries. The real number may be much higher, however, as it is difficult to determine whether a driver was drowsy at the time of a crash.
+       <br><br> <div align="center">
+        <iframe width="562" height="316" src="https://www.youtube.com/embed/BZuQFr6KuTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div><br> 
+      <ul>
+        <li>Accidents occur because of single negligence, thus drowsiness detection system which works in real-time is necessary.  </li>
+        <li>A drowsiness detection system on a vehicle can reduce many accidents. This project proposes different algorithms for driver drowsiness such as Support Vector Machine (SVM), Long Short Term Memory Units (LSTM) - Convolutional Neural Network (CNN).</li>
+        <li>The proposed algorithms make use of features learned using a convolutional neural network (CNN) so as to explicitly capture various latent facial features and the complex non-linear feature interactions.</li>
+        
+      </ul>
+        <div align="center">
+        <img src="img/drowsy1.png" alt="accuracy">
+      </div>
+
+		</h5>
+    <br>
+    	<h5>
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a target="_blank" href="https://github.com/arjit3004/Traffic-Signal-Detect">Identify Traffic Sign GUI</a></strong>
+      <br>
+        <p>You must have heard about the self-driving cars in which the passenger can fully depend on the car for traveling. But to achieve level 5 autonomous, it is necessary for vehicles to understand and follow all traffic rules.</p>
+      <p>There are several different types of traffic signs like speed limits, no entry, traffic signals, turn left or right, children crossing, no passing of heavy vehicles, etc. Traffic signs classification is the process of identifying which class a traffic sign belongs to.</p>
+        
+      <div align="center">
+  		<img class="img-rectangle" width="650" height="450" src="img/gui1png" alt="GUI">
+      <br>
+  	  </div><br>Successfully classified the traffic signs classifier with 95% accuracy and also visualized how our accuracy and loss changes with time, which is pretty good from a simple CNN model.
+		</h5>
+    <br>
+		<h5>
+			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Travel-Yatri: A real-time itinerary planner</a></strong>
+      <br>
+    
+      <ul><li>Travel-Yatri is the system that automatically suggests an itinerary plan for a travel destination based on the dates and places of visit. The purpose of Travel-Yatri is to provide the end-user with an itinerary that is suited to their custom needs. </li><li>This also enables the user to spend whatever little time he/she/they have (for example between two train stations) to see the landmarks in the city. </li><li>"Travel-Yatri" is aimed to be the most-exhaustive and efficient travel itinerary, including everything from tourist destinations, local attractions, food options, hotel deals, travel options, etc. The itinerary is self-sufficient, in the sense that it includes point to point transportation and affordable stay options.
+      </li></ul>
+		
+      <div align="center">
+        <img class="img-rectangle" width="550" height="400" src="img/travel.png" alt="travel-yatri">
+      </div><br>
+      <p>“Travel-Yatri” is an online portal for automated planning of a travel itinerary, which can be used by a user before their journey. On the commercial side, Travel-Yatri helps travel agencies to plan their packages & tours.</p>
+
+
+    </div>
+  </div>
+
+  	<div class="social">
+	<div align="center">
+		<h4>
+	    <a target="_blank" href="http://github.com/arjit3004"><i class="fa fa-github"></i></a>
+	    
+	    
+		  <a target="_blank" href="mailto:arjit3004@gmail.com"><i class="fa fa-envelope"></i></a>
+	    
+
+	    
+		  <a target="_blank" href="http://twitter.com/arjit3004"><i class="fa fa-twitter"></i></a>
+	    
+	    
+		  <a target="_blank" href="http://linkedin.com/in/arjit3004"><i class="fa fa-linkedin"></i></a>
+	    
+	    
+		 
+		</h4>
+	</div>
+</div>
+
+</div>
+</section>
+
+
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+          <p class="text-muted">Copyright 2020  <a href="index.html">Arjit Yadav</a><p style="color:red; text-align: center;">fL@Me</p>
+        </div>
+    </div>
+</footer>
+<div class="footer"></div>
+
+
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/docs.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
